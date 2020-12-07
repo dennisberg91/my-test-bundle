@@ -2,6 +2,7 @@
     "name": "dennisberg91/my-test-bundle",
     "description": "Test bundle to practice making a Symfony bundle.",
     "type": "symfony-bundle",
+    "version": "1.0",
     "authors": [
         {
             "name": "Dennis van den Berg",
@@ -12,6 +13,7 @@
         "php": "^7.4",
         "symfony/http-kernel": "^5.2"
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "MichielBakker\\MyTestBundle\\": "src"
