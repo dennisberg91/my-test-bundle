@@ -1,11 +1,11 @@
 {
-    "name": "mmbakker/my-test-bundle",
+    "name": "dennisberg91/my-test-bundle",
     "description": "Test bundle to practice making a Symfony bundle.",
     "type": "symfony-bundle",
     "authors": [
         {
-            "name": "Michiel Bakker",
-            "email": "jaffog@gmail.com"
+            "name": "Dennis van den Berg",
+            "email": "dennis91@live.nl"
         }
     ],
     "require": {
