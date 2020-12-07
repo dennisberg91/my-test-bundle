@@ -1,4 +1,12 @@
+parameters:
+    env(PREFIX): 'Prefix get fixed YUP!'
+    my_test_bundle.prefix: '%env(PREFIX)%'
+
 services:
-  _defaults:
-    autowire: true
-    autoconfigure: true
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    MichielBakker\MyTestBundle\Service\MessageBuilder:
+        arguments:
+            $prefix: '%my_test_bundle.prefix%'
