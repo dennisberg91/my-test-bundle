@@ -1,5 +1,5 @@
 parameters:
-    env(PREFIX): 'Prefix get fixed YUP!'
+    env(PREFIX): Prefix get fixed YUP!
     my_test_bundle.prefix: '%env(PREFIX)%'
 
 services:

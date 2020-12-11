@@ -11,12 +11,20 @@
     ],
     "require": {
         "php": "^7.4",
-        "symfony/http-kernel": "^5.2"
+        "ext-json": "*",
+        "symfony/http-kernel": "^5.1",
+        "symfony/http-client": "^5.1"
     },
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "MichielBakker\\MyTestBundle\\": "src"
         }
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "5.x-dev"
+    },
+    "scripts": {
+        "test": "vendor/bin/simple-phpunit"
     }
 }

@@ -2,23 +2,20 @@
 
 namespace MichielBakker\MyTestBundle\Service;
 
-/**
- * Name printer, it autowires.
- *
- * @TODO: make dependency injection (services.yaml) work.
- * @TODO: add configuration to services.yaml file.
- */
 class MessageBuilder
 {
-    private string $prefix;
+    private string $prefix = 'Default Prefix';
 
     public function __construct(string $prefix)
     {
         $this->prefix = $prefix;
     }
 
-    public function printMessage(string $name): void
+    /**
+     * @param string $name
+     */
+    public function printMessage(string $name): string
     {
-        printf('%s %s!', $this->prefix, $name);
+        return sprintf('%s %s!', $this->prefix, $name);
     }
 }
